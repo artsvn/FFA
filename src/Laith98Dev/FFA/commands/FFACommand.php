@@ -99,9 +99,7 @@ class FFACommand extends Command implements PluginOwned
 				$arenaName = $args[1];
 				$level = $sender->getWorld();
 				
-				if($level->getFolderName() == $this->plugin->getServer()->getWorldManager()->getDefaultWorld()->getFolderName()){
-					$sender->sendMessage(TF::RED . "You cannot create game in default world!");
-					return false;
+				
 				}
 
 				$this->plugin->arena_Exist($arenaName, function (bool $exists) use ($sender, $arenaName, $level){
