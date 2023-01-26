@@ -470,7 +470,7 @@ class FFACommand extends Command implements PluginOwned
 
 				foreach ($this->plugin->getArenas() as $arena){
 
-					$sender->sendMessage(TF::YELLOW . "- " . $arena->getName() . " => Players: " . count($arena->getPlayers()));
+					$sender->sendMessage(TF::YELLOW . "Map: " . $arena->getName() . " » Players: " . count($arena->getPlayers()));
 
 				}
 
